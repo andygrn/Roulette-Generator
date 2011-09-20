@@ -92,7 +92,7 @@ function prepareDraw()
 
 	var values = [],
 		colour = [],
-		roulette_option = document.getElementById('option-roulette-type1').value;
+		roulette_option = document.getElementById('option-roulette-type1').checked;
 	
 	for (var i in parameter_inputs)
 	{
@@ -123,7 +123,7 @@ function prepareDraw()
 		
 	}
 	
-	if (roulette_option === 'on')
+	if (roulette_option)
 	{
 	
 		drawEpitrochoid(
